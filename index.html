@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot WhatsApp</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Conecte seu WhatsApp</h1>
+        <article>
+            <h2>Como conectar</h2>
+            <div>
+                <p>1. Abra o aplicativo do WhatsApp</p>
+                <p>2. Busque as opções, geralmente três pontinhos na parte superior direita do aplicativo.</p>
+                <p>3. Nas opções terá "Dispositivos conectados", clique nela.</p>
+                <p>4. Clique em "Conectar Dispositivo" e aponte a câmera para o QRcode abaixo</p>
+            </div>
+            <div>
+                <div id="qrcode" alt="QR Code para conexão" src=""></div>
+            </div>
+        </article>
+    </section>
+    
+    <script type="module" src="reqQrCode.js"></script>
+</body>
+</html>
