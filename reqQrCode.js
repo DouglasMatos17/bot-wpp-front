@@ -3,7 +3,6 @@ async function fetchQRCode() {
         const response = await fetch('https://whatsapp-bot-production-b594.up.railway.app/qr');
         const qrCodeData = await response.text();
         const qrcodeElement = document.getElementById('qrcode');
-        // Configuração do QR code
         let qrcode = new QRCode(qrcodeElement, {
             text: qrCodeData,
             width: 350,
