@@ -4,7 +4,7 @@ async function fetchQRCode() {
         const qrCodeData = await response.text();
         const qrcodeElement = document.getElementById('qrcode');
         // Configuração do QR code
-        var qrcode = new QRCode(qrcodeElement, {
+        let qrcode = new QRCode(qrcodeElement, {
             text: qrCodeData,
             width: 350,
             height: 350,
@@ -17,5 +17,4 @@ async function fetchQRCode() {
     }
     }
 
-// Chamar a função para buscar o QR code quando a página carregar
 window.onload = fetchQRCode;
